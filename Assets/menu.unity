@@ -601,6 +601,7 @@ GameObject:
   - component: {fileID: 678199122}
   - component: {fileID: 678199130}
   - component: {fileID: 678199129}
+  - component: {fileID: 678199131}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -736,7 +737,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 678199130}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 678199131}
   variables: []
   description: 
   stepPause: 0
@@ -765,7 +767,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &678199129
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -780,7 +782,7 @@ MonoBehaviour:
   targetButton: {fileID: 1994973715}
 --- !u!114 &678199130
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -802,8 +804,23 @@ MonoBehaviour:
   blockName: "\u904A\u6232\u95DC\u9589"
   description: 
   eventHandler: {fileID: 678199129}
-  commandList: []
+  commandList:
+  - {fileID: 678199131}
   suppressAllAutoSelections: 0
+--- !u!114 &678199131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678199121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
 --- !u!1 &1316597987
 GameObject:
   m_ObjectHideFlags: 0
